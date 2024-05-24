@@ -1,0 +1,49 @@
+/* Education.css */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .education-card {
+    display: flex; /* Use flexbox for two-column layout */
+    flex-direction: row;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 20px;
+    
+  }
+
+  .education-heading {
+    font-size: 56px;
+    font-weight: 400;
+}
+  .institution-logo {
+    width: 15%; /* Allow the width to adjust based on the height */
+    margin-top: 20px;
+  }
+  .logo-img{
+    max-width: 100px; /* Adjust the size of the logo as needed */
+    height: auto;
+  }
+  .details {
+    width: 85%; 
+  }
+  .coursework{
+    font-size: 15px;
+    font-weight: 200;
+  }
+  @media (max-width: 768px) {
+    .education-card {
+      width: 90%;
+    }
+    .education-card {
+        flex-direction: column;
+  }
+  .details {
+    width: 100%; 
+  }
+}
+  

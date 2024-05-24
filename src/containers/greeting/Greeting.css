@@ -1,0 +1,128 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+.circular-image2 {
+  width: 50%; /* You can set the width as needed */
+  height: 50%; /* Set the desired height */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflow content */
+}
+.greeting-main {
+  display: flex;
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+.greeting-text-div {
+  width: 70%; /* Set width to 70% */
+}
+
+.greeting-image-div {
+  width: 30%; /* Set width to 30% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+  gap: 4px;
+}
+
+.greeting-text {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+
+/* newly added block - end */
+
+.greeting-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .greeting-text {
+    font-size: 50px;
+  }
+  .greeting-text-p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: space-around;
+    margin-right: 10px;
+    margin-left: 10px;
+    gap:4px;
+  }
+  .greeting-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-main {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+}
