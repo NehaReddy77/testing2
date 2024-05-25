@@ -2,12 +2,10 @@
   font-size: 2em;
 }
 
-.icon-button {
-  margin-bottom: 10px;
-}
 
-.icon-button i {
-  color: white;
+
+.icon-button{
+
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;
@@ -25,24 +23,24 @@
   margin-bottom: 10px;
 }
 
-.facebook i {
+.facebook  {
   background-color: #3b5998;
 }
 
-.linkedin i {
-  background-color: #0e76a8;
+.linkedin {
+  background-color: #7bbcdb;
 }
 
-.github i {
-  background-color: #333;
+.github  {
+  background-color: #f3eded;
 }
 
 .gitlab i {
   background-color: #fca326;
 }
 
-.google i {
-  background-color: #ea4335;
+.google  {
+  background-color: #7895b7;
 }
 
 .twitter i {

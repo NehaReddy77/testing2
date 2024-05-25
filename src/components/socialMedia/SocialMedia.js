@@ -2,6 +2,7 @@ import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 export default function socialMedia() {
   return (
@@ -9,7 +10,7 @@ export default function socialMedia() {
       
       {socialMediaLinks.github ? 
       (<a href={socialMediaLinks.github} className="icon-button github" target="_blank">
-        <FontAwesomeIcon className="fab fa-github"></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faGithub} />
         <span></span>
       </a>)
       :
@@ -17,7 +18,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.linkedin ?
       <a href={socialMediaLinks.linkedin} className="icon-button linkedin" target="_blank">
-        <FontAwesomeIcon className="fab fa-linkedin-in"></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faLinkedinIn}/>
         <span></span>
       </a>
       :
@@ -25,7 +26,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.gmail ?
       <a href={`mailto:${socialMediaLinks.gmail}`} className="icon-button google" target="_blank">
-        <FontAwesomeIcon className="fab fa-google"></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faGoogle} />
         <span></span>
       </a>
       :
